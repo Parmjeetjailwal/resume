@@ -1,0 +1,363 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: #add8e6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+/* Full-Page */
+.container {
+	background: #fff;
+	margin: 50px;
+	max-width: 1000px;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	position: relative;
+	width: 100%;
+	box-shadow: 0 35px 55px rgb(0 0 0 / 10%);
+}
+
+/* Left-Side-of-Page */
+.left-side {
+	background: #013147;
+	position: relative;
+	padding: 40px;
+}
+/* Profile-Portion  */
+.profile-portion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.img-box {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.img-box img {
+	width: 200px;
+}
+
+.profile-text h2 {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 20px;
+	line-height: 1.4em;
+	font-size: 1.5em;
+}
+.profile-text h2 span {
+	font-size: 0.8em;
+	font-weight: 300;
+	color: #d3d3d3;
+}
+/* Contact-Info  */
+.contact-info {
+	padding-top: 40px;
+}
+
+.title {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	padding-top: 50px;
+}
+
+.contact-info ul li {
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.contact-info ul li span {
+	color: #fff;
+}
+
+.contact-info ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contact-info ul li .icon {
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #03a9f4;
+}
+/* Education-Info */
+.education {
+	padding-top: 0px;
+}
+.contact-info.education li {
+	margin-bottom: 15px;
+}
+
+.contact-info.education h5 {
+	color: #03a9f4;
+	font-weight: 500;
+}
+
+.contact-info.education h3 {
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-info.education h4 {
+	color: #fff;
+	font-weight: 300;
+}
+
+/* Languages */
+.skills .title {
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+.skills .box {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 90px 1fr;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.skills .box h4 {
+	color: #f0f0f0;
+	font-weight: 500;
+}
+
+.skills .box .percent {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background-color: #f0f0f0;
+}
+
+.skills .box .percent div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+}
+
+.certification .title2 {
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	padding-top: 30px;
+}
+
+.certification ul h5 {
+	color: #03a9f4;
+}
+
+.certification ul li {
+	list-style: none;
+}
+
+.certification ul li a {
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Right-Side-of-Page */
+.container .right-side {
+	background: #fff;
+	position: relative;
+	padding: 40px;
+}
+/* About-Section */
+.about {
+	margin-bottom: 50px;
+}
+
+.title2 {
+	color: #003147;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+
+.about p {
+	color: #003147;
+	line-height: 24px;
+	/* font-family: Arial, sans-serif; */
+}
+
+.about ul {
+	/* font-family: Arial, sans-serif; */
+	line-height: 24px;
+	list-style-type: circle;
+}
+
+/* Personal-Interests */
+.interest ul {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+	list-style: none;
+	color: #333;
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+.interest ul li .fa {
+	color: #03a9f4;
+	font-size: 18px;
+	width: 20px;
+}
+
+/* Languages */
+.skills1 .box {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.skills1 .box h4 {
+	text-transform: uppercase;
+	color: #848c99;
+	font-weight: 500;
+}
+
+.skills1 .box .percent {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background-color: #f0f0f0;
+}
+
+.skills1 .box .percent div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+}
+
+/* Personal Skills */
+.skills1 ul {
+	display: grid;
+	column-gap: 50px;
+	grid-template-columns: repeat(4, 1fr);
+	cursor: pointer;
+}
+
+.skills1 ul li {
+	list-style: none;
+	color: #fff;
+	font-weight: 500;
+	margin: 10px 0;
+	background-color: #03a9f4;
+	padding: 3% 2% 3% 2%;
+	text-align: center;
+	border-radius: 8px;
+}
+
+/* Soft Skills */
+.soft-skills ul {
+	display: grid;
+	column-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	cursor: pointer;
+}
+
+.soft-skills ul li {
+	list-style: none;
+	border: 2px solid #03a9f4;
+	color: #03a9f4;
+	font-weight: 500;
+	margin: 10px 0;
+	padding: 3% 2% 3% 2%;
+	text-align: center;
+	border-radius: 50px;
+}
+
+.projects h3 {
+	padding-bottom: 3%;
+}
+
+.projects .title2 ul li {
+	list-style: none;
+	color: #03a9f4;
+	width: 90%;
+	text-decoration: none;
+}
+
+.projects ul li h3 {
+	margin-top: 3%;
+}
+.projects ul li p {
+	margin-top: 1%;
+}
+
+.projects ul li a {
+	text-decoration: none;
+	color: #03a9f4;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.left-side {
+		font-size: x-large;
+	}
+	.certification li {
+		padding-top: 3%;
+	}
+	.certification li h5 {
+		padding-bottom: 3%;
+	}
+	.skills .box {
+		grid-template-columns: 190px 1fr;
+	}
+	.about {
+		font-size: large;
+	}
+	.skills1 ul {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.soft-skills ul {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.projects ul li {
+		padding-top: 5%;
+	}
+	.education ul li h5 {
+		padding-top: 3%;
+	}
+}
