@@ -1,345 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Free Html tutorial for bigneers" />
-    <meta name="keywords" content="HTML, tutorial, begineers" />
-    <meta name="author" content="Parmjeet Jailwal" />
-    <meta name="viewport" content="width=device-width, intital-scale=1.0" />
-    <meta http-equiv="refresh" content="60" />
-    <!-- Card Details -->
-    <meta property="og:title" content="Parmjeet's Resume Website" />
-    <meta
-      property="og:description"
-      content="A responsive website created using html,css and js."
-    />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="Assets/parm.jpeg" />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="Assets/pngwing.com.png"
-      type="image/x-icon"
-    />
-    <!-- Font-Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Title -->
-    <title>My Resume</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- left-side-of-web-page -->
-      <div class="left-side">
-        <!-- Profile-section-with-photo-name-title -->
-        <div class="profile-portion">
-          <div class="img-box">
-            <img src="Assets/parm.jpeg" alt="Profile" />
-          </div>
-          <div class="profile-text">
-            <h2>
-              Parmjeet Jailwal
-              <br />
-              <span>DevOps Engineer</span>
-            </h2>
-          </div>
+<head>
+  <meta name="description"
+    content="Professional resume of Parmjeet Jailwal - DevOps Engineer and Cloud Solutions Architect" />
+  <meta name="keywords" content="DevOps, Cloud, Azure, AWS, GCP, Kubernetes, Terraform, CI/CD" />
+  <meta name="author" content="Parmjeet Jailwal" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="60" />
+  <!-- Card Details -->
+  <meta property="og:title" content="Parmjeet Jailwal - DevOps Engineer Resume" />
+  <meta property="og:description"
+    content="Experienced DevOps Engineer specializing in Cloud Infrastructure, CI/CD pipelines, and Infrastructure as Code" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="Assets/parm.jpeg" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="Assets/pngwing.com.png" type="image/x-icon" />
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Title -->
+  <title>Parmjeet Jailwal - DevOps Engineer Resume</title>
+  <style>
+    /* Projects: boxed and stacked layout */
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .project-card {
+      border-radius: 12px;
+      background: #ffffff;
+      /* white box background */
+      border: 1px solid #e6e9ef;
+      padding: 1rem;
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08);
+    }
+
+    .project-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #0f172a;
+    }
+
+    .project-meta {
+      font-size: 0.78rem;
+      color: #4f46e5;
+      margin-bottom: 0.45rem;
+    }
+
+    .project-desc {
+      color: #374151;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-tags {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .project-tags span {
+      background: #f1f5f9;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      color: #475569;
+    }
+
+    @media (min-width: 980px) {
+
+      /* keep single column but limit width for readability */
+      .projects-grid {
+        max-width: 880px;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- left-side-of-web-page -->
+    <div class="left-side">
+      <!-- Profile-section-with-photo-name-title -->
+      <div class="profile-portion">
+        <div class="img-box">
+          <img src="Assets/parm.jpeg" alt="Profile" />
         </div>
-        <!-- Contact-info-with-links-to-reach  -->
-        <div class="contact-info">
-          <h3 class="title">Contact Info</h3>
-          <ul>
-            <li>
-              <span class="icon"
-                ><i class="fa fa-envelope" aria-hidden="true"></i
-              ></span>
-              <span class="text">
-                <a href="mailto:vermaparmjeet@gmail.com"
-                  >mail.google.com/Me</a
-                ></span
-              >
-            </li>
-            <li>
-              <span class="icon"
-                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-              ></span>
-              <span class="text"
-                ><a
-                  href="https://www.linkedin.com/in/parmjeet-jailwal-858b38170/"
-                  target="_blank"
-                  >www.linkedin.com/Me</a
-                ></span
-              >
-            </li>
-            <li>
-              <span class="icon"
-                ><i class="fa fa-user" aria-hidden="true"></i
-              ></span>
-              <span class="text"
-                ><a
-                  href="https://parmjeetjailwal.github.io/Portfolio/"
-                  target="_blank"
-                  >My Protfolio
-                </a>
-              </span>
-            </li>
-            <li>
-              <span class="icon"
-                ><i class="fa fa-twitter" aria-hidden="true"></i
-              ></span>
-              <span class="text"
-                ><a href="https://twitter.com/JailwalParmjeet" target="_blank"
-                  >twitter.com/Me</a
-                ></span
-              >
-            </li>
-            <li>
-              <span class="icon"><i class="fa fa-github"></i></span>
-              <span class="text"
-                ><a href="https://github.com/Parmjeetjailwal" target="_blank"
-                  >www.github.com/Me</a
-                ></span
-              >
-            </li>
-            <li>
-              <span class="icon"
-                ><i class="fa fa-phone" aria-hidden="true"></i
-              ></span>
-              <span class="text">+91 8685962141</span>
-            </li>
-            <li>
-              <span class="icon"
-                ><i class="fa fa-map-marker" aria-hidden="true"></i
-              ></span>
-              <span class="text">Jind, Haryana, India</span>
-            </li>
-          </ul>
-        </div>
-        <!-- Education-background  -->
-        <div class="contact-info education">
-          <h3 class="title">Education</h3>
-          <ul>
-            <li>
-              <h3>Graduated in Mathematics</h3>
-            </li>
-            <li>
-              <h5>2012-2013</h5>
-              <h3>Senior Secondary</h3>
-              <h4>S.D. Sen. Sec. School Narwana</h4>
-            </li>
-          </ul>
-        </div>
-        <!-- Certifications -->
-        <div class="about certification">
-          <h3 class="title">Certifications</h3>
-          <ul>
-            <li>
-              <h5>(Sep 2021)</h5>
-              <a
-                href="https://www.credly.com/badges/36e22b34-a4d8-4967-9a52-73288e61bda9/public_url"
-                target="_blank"
-              >
-                Microsoft Certified: Azure Fundamentals (AZ-900)
-              </a>
-            </li>
-            <li>
-              <h5>(May 2022)</h5>
-              <a
-                href="https://www.credly.com/badges/399da2a1-ed92-41ba-9d5e-d03ba431090f/public_url"
-                target="_blank"
-              >
-                Azure Administrator Associate (AZ-104)
-              </a>
-            </li>
-            <li>
-              <h5>(Jan 2023)</h5>
-              <a
-                href="https://www.credly.com/badges/bf7d3d62-4ab3-4905-b49a-db24539a42dd/public_url"
-                target="_blank"
-              >
-                Microsoft Azure Infrastructure Solutions(AZ-305)
-              </a>
-            </li>
-            <li>
-              <h5>(Jan 2023)</h5>
-              <a
-                href="https://www.credly.com/badges/605e5098-5912-47fe-a4d9-c9603b1b3b76/public_url"
-                target="_blank"
-              >
-                Microsoft Certified: Azure Solutions Architect Expert
-              </a>
-            </li>
-            <li>
-              <h5>(Aug 2022)</h5>
-              <a
-                href="https://www.credential.net/ca9f7707-f1de-489a-af11-f13cebf33c00"
-                target="_blank"
-              >
-                Google Cloud Certified - Associate Cloud Engineer
-              </a>
-            </li>
-            <li>
-              <h5>(Nov 2021)</h5>
-              <a
-                href="https://www.credly.com/badges/d98e9f08-12c0-4429-a927-54fa2cc20d84/public_url"
-                target="_blank"
-              >
-                HashiCorp Certified: Terraform Associate
-              </a>
-            </li>
-            <li>
-              <h5>(Oct 2022)</h5>
-              <a
-                href="https://www.credly.com/badges/1015e148-421a-4e12-9093-d20d9ee4f0b7/public_url"
-                target="_blank"
-              >
-                Microsoft Certified: Security, Compliance, and Identity
-                Fundamentals (SC-900)
-              </a>
-            </li>
-            <li>
-              <h5>(Dec 2022)</h5>
-              <a
-                href="https://www.credly.com/badges/3d541775-a464-410f-84c2-181564aa49bb/public_url"
-                target="_blank"
-              >
-                Microsoft Azure Data Fundamentals (DP-900)
-              </a>
-            </li>
-            <li>
-              <h5>(Oct 2022)</h5>
-              <a
-                href="https://www.credly.com/badges/d4983af3-c0d8-43fa-b6cd-31247a2cd822/public_url"
-                target="_blank"
-              >
-                Microsoft Certified: Azure AI Fundamentals (AI-900)
-              </a>
-            </li>
-            <li>
-              <h5>(Nov 2022)</h5>
-              <a
-                href="https://www.credly.com/badges/9f6f79e3-030d-42d1-a9ff-752b31a1833e/public_url"
-                target="_blank"
-              >
-                AWS Certified Cloud Practitioner
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Languages -->
-        <div class="about skills">
-          <h3 class="title">Languages</h3>
-          <div class="box">
-            <h4>English</h4>
-            <div class="percent">
-              <div style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="box">
-            <h4>Hindi</h4>
-            <div class="percent">
-              <div style="width: 80%"></div>
-            </div>
-          </div>
+        <div class="profile-text">
+          <h2>
+            Parmjeet Jailwal
+            <br />
+            <span>DevOps Engineer</span>
+          </h2>
         </div>
       </div>
-      <!-- Right-side-of-web-page -->
-      <div class="right-side">
-        <!-- About-Section  -->
-        <div class="about">
-          <h2 class="title2">Profile</h2>
-          <p>
-            Cloud Evangelist providing highly available, robust, secure,
-            fault-tolerant, self-healing and scalable cloud-native, multi-cloud
-            solutions to help organizations achieve their business objectives.
-            <br /><br />
-          </p>
-          <ul>
-            <li>Strong knowledge of various cloud like Azure, Aws, GCP</li>
-            <li>
-              A continuous learner, to keep updated with the technology trends.
-            </li>
-          </ul>
-        </div>
-        <!-- Professional-Skills  -->
-        <div class="about skills1">
-          <h2 class="title2">Personal Skills</h2>
-          <ul>
-            <li>Azure</li>
-            <li>AWS</li>
-            <li>GCP</li>
-            <li>Terraform</li>
-            <li>Python</li>
-            <li>Linux</li>
-            <li>Git</li>
-            <li>GitOps</li>
-            <li>Docker</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
-        <!-- GitHub-DashBord  -->
-        <div class="about github">
-          <h2 class="title2">GitHub Dashbord</h2>
-          <img src="http://ghchart.rshah.org/ParmjeetJailwal" alt="" />
-        </div>
-        <!-- Projects -->
-        <div class="about projects">
-          <h2 class="title2">Personal Projects</h2>
-          <ul>
-            <li>
-              <a
-                href="https://parmjeetjailwal.github.io/Portfolio/"
-                target="_blank"
-              >
-                <h3>Portfolio Website</h3>
+      <!-- Contact-info-with-links-to-reach  -->
+      <div class="contact-info">
+        <h3 class="title">Contact Info</h3>
+        <ul>
+          <li>
+            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span class="text">
+              <a href="mailto:vermaparmjeet@gmail.com">Mail</a></span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+            <span class="text"><a href="https://www.linkedin.com/in/parmjeet-jailwal/" target="_blank">Parmjeet
+                Jailwal</a></span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <span class="text"><a href="https://parmjeetjailwal.github.io/Portfolio/" target="_blank">Portfolio Website
               </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Parmjeetjailwal/kubernetes-practice/tree/main/developing-yaml-manifests"
-                target="_blank"
-              >
-                <h3>Kubernetes Basics</h3>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Parmjeetjailwal/Terraform-practice"
-                target="_blank"
-              >
-                <h3>Terraform on Azure</h3>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Parmjeetjailwal/Python3"
-                target="_blank"
-              >
-                <h3>Python3</h3>
-              </a>
-            </li>
-          </ul>
+            </span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+            <span class="text"><a href="https://github.com/Parmjeetjailwal" target="_blank">GitHub Profile</a></span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <span class="text">+91 8685962141</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+            <span class="text">Jind, Haryana, India</span>
+          </li>
+        </ul>
+      </div>
+      <!-- Education-background  -->
+      <div class="contact-info education">
+        <h3 class="title">Education</h3>
+        <ul>
+          <li>
+            <h5>2017-2020</h5>
+            <h3>Bachelor of Computer Applications</h3>
+          </li>
+        </ul>
+      </div>
+      <!-- Certifications -->
+      <div class="about certification">
+        <h3 class="title">Certifications</h3>
+        <ul>
+          <li>
+            <a href="https://learn.microsoft.com/en-in/users/parmjeetjailwal/credentials/93d42895f603626d"
+              target="_blank" rel="noreferrer">
+              <strong>AZ-900</strong> – Microsoft Azure Fundamentals
+            </a>
+          </li>
+          <li>
+            <a href="https://learn.microsoft.com/en-in/users/parmjeetjailwal/credentials/85023a2eeac18f1"
+              target="_blank" rel="noreferrer">
+              <strong>AZ-104</strong> – Azure Administrator Associate
+            </a>
+          </li>
+          <li>
+            <a href="https://learn.microsoft.com/en-in/users/parmjeetjailwal/credentials/1e195e1f89f0fbe3"
+              target="_blank" rel="noreferrer">
+              <strong>AZ-400</strong> – Azure DevOps Engineer Expert
+            </a>
+          </li>
+          <li>
+            <a href="https://learn.microsoft.com/en-in/users/parmjeetjailwal/credentials/bc4d70ad30bdf28c"
+              target="_blank" rel="noreferrer">
+              <strong>AZ-305</strong> – Azure Solutions Architect
+            </a>
+          </li>
+          <li>
+            <a href="https://www.credly.com/badges/9f6f79e3-030d-42d1-a9ff-752b31a1833e/public_url" target="_blank"
+              rel="noreferrer">
+              <strong>AWS</strong> – Certified Cloud Practitioner
+            </a>
+          </li>
+          <li>
+            <a href="https://www.credly.com/badges/bea90bfd-2caf-4990-95c7-d0fa6d91b2b5/public_url" target="_blank"
+              rel="noreferrer">
+              <strong>GCP</strong> – Associate Cloud Engineer
+            </a>
+          </li>
+          <li>
+            <a href="https://www.credly.com/badges/d98e9f08-12c0-4429-a927-54fa2cc20d84/public_url" target="_blank"
+              rel="noreferrer">
+              <strong>Terraform</strong> – HashiCorp Certified Associate
+            </a>
+          </li>
+          <li>
+            <a href="https://www.credly.com/badges/9a769e9e-9fd8-45f1-9cba-6dd7d739970e" target="_blank"
+              rel="noreferrer">
+              <strong>GitOps</strong> – Fundamentals
+            </a>
+          </li>
+          <li>
+            <a href="https://www.credly.com/badges/7e179cad-cfbb-408c-a147-d4435a37dd71" target="_blank"
+              rel="noreferrer">
+              <strong>GitOps</strong> – At Scale
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Languages -->
+      <div class="about skills">
+        <h3 class="title">Languages</h3>
+        <div class="box">
+          <h4>English</h4>
+          <div class="percent">
+            <div style="width: 80%"></div>
+          </div>
         </div>
-        <!-- Soft-Skills  -->
-        <div class="about soft-skills">
-          <h2 class="title2">Soft Skills</h2>
-          <ul>
-            <li>Teamwork</li>
-            <li>Problem-Solving</li>
-            <li>Time Management</li>
-            <li>Patience</li>
-            <li>Work Ethic</li>
-            <li>Communication</li>
-          </ul>
+        <div class="box">
+          <h4>Hindi</h4>
+          <div class="percent">
+            <div style="width: 80%"></div>
+          </div>
         </div>
-        <!-- Technical-Skills  -->
       </div>
     </div>
-  </body>
+    <!-- Right-side-of-web-page -->
+    <div class="right-side">
+      <!-- About-Section  -->
+      <div class="about">
+        <h2 class="title2">Profile</h2>
+        <p>
+          Results-driven DevOps Engineer with 4.5+ years of experience designing and implementing highly available,
+          secure, and scalable cloud-native infrastructure across multi-cloud environments. Passionate about
+          Infrastructure as Code, CI/CD automation, and building resilient systems that drive business value.
+          <br /><br />
+        </p>
+        <ul>
+          <li>Expert in Microsoft Azure, AWS, and Google Cloud Platform with production-grade implementations</li>
+          <li>Proficient in Infrastructure as Code (Terraform, CloudFormation, Ansible) for infrastructure automation
+          </li>
+          <li>Specialized in containerization and orchestration using Docker, Kubernetes, and Docker Swarm</li>
+          <li>Strong background in CI/CD pipeline design and implementation using Jenkins, GitHub Actions, Azure DevOps
+          </li>
+          <li>Continuous learner committed to staying updated with emerging cloud technologies and best practices</li>
+        </ul>
+      </div>
+      <!-- Professional Experience -->
+      <div class="about">
+        <h2 class="title2">Professional Experience</h2>
+        <div style="margin-bottom: 1.2rem;">
+          <h3 style="margin-bottom: 0.2rem;">Senior Infrastructure Engineer L1</h3>
+          <p style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.4rem;">Publicis Sapient | Jul 2025 - Present
+          </p>
+          <ul style="font-size: 0.85rem; color: #0f172a; margin-left: 1.2rem;">
+            <li>Own CI/CD pipeline design and platform automation for multiple services</li>
+            <li>Provision and manage cloud resources and identity/access controls across AWS, Azure, GCP</li>
+            <li>Support deployments, observability, and incident response workflows</li>
+            <li>Collaborate with cross-functional teams on infrastructure strategy and optimization</li>
+          </ul>
+        </div>
+        <div style="margin-bottom: 1.2rem;">
+          <h3 style="margin-bottom: 0.2rem;">DevOps Engineer</h3>
+          <p style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.4rem;">GIIT Solutions | May 2023 - Jul 2025</p>
+          <ul style="font-size: 0.85rem; color: #0f172a; margin-left: 1.2rem;">
+            <li>Implemented CI/CD migrations and automated infrastructure provisioning with Terraform</li>
+            <li>Reduced GCP costs by 40% through auto-shutdown/start using Cloud Scheduler and Cloud Functions</li>
+            <li>Consolidated 48+ Jenkins jobs into streamlined master pipelines for Java and Node components</li>
+            <li>Introduced monitoring (Prometheus, Grafana), backups, and log rotation to improve system reliability
+            </li>
+            <li>Worked closely with dev and QA teams to streamline platform operations and improve deployment workflows
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 0.2rem;">DevOps Engineer</h3>
+          <p style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.4rem;">Tag11 Infotech | Jan 2021 - May 2023</p>
+          <ul style="font-size: 0.85rem; color: #0f172a; margin-left: 1.2rem;">
+            <li>Maintained CI/CD pipelines and supported container-based deployments on cloud platforms</li>
+            <li>Performed operational tasks, upgrades, and environment provisioning for development and testing</li>
+            <li>Assisted in infrastructure automation and basic scripting for routine tasks</li>
+            <li>Collaborated with senior team members on infrastructure improvements</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Professional-Skills  -->
+      <div class="about skills1">
+        <h2 class="title2">Personal Skills</h2>
+        <ul>
+          <li>Azure</li>
+          <li>AWS</li>
+          <li>GCP</li>
+          <li>Terraform</li>
+          <li>Kubernetes</li>
+          <li>Docker</li>
+          <li>Jenkins</li>
+          <li>GitHub Actions</li>
+          <li>Python</li>
+          <li>Bash/Shell Scripting</li>
+          <li>Linux</li>
+          <li>Git</li>
+          <li>GitOps</li>
+          <li>Ansible</li>
+          <li>CloudFormation</li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="about projects">
+        <h2 class="title2">Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Aristocrat Gaming -->
+          <div class="project-card">
+            <div>
+              <h3 class="project-title">Aristocrat Gaming</h3>
+              <div class="project-meta">
+                GCP · Jenkins · Azure DevOps · MongoDB · MinIO
+              </div>
+              <div class="project-desc">
+                <ul>
+                  <li>Merged <strong>48 Jenkins</strong> jobs into <strong>2 master</strong>
+                    pipelines for Java and Node components.</li>
+                  <li>Reduced GCP costs by <strong>40%</strong> through auto-shutdown/start using
+                    Cloud Scheduler, Pub/Sub, and Cloud Functions.</li>
+                  <li>Converted Jenkins Groovy pipelines to <strong>Azure DevOps</strong> YAML for
+                    better maintainability.</li>
+                  <li>Automated daily backups to <strong>MinIO</strong> and GCS; implemented log
+                    rotation for memory optimization.</li>
+                  <li>Provisioned <strong>GCP</strong> environments (GKE, VMs, IAM, DNS) and
+                    upgraded <strong>MongoDB</strong> and Windows servers.</li>
+                  <li>Set up <strong>SonarQube</strong> across pipelines and migrated Jenkins from
+                    <strong>CentOS</strong> to <strong>Debian 12</strong> including slave nodes.
+                  </li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span>Jenkins</span>
+                <span>GCP</span>
+                <span>Azure DevOps</span>
+                <span>MinIO</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blink (EV Charging) -->
+          <div class="project-card">
+            <div>
+              <h3 class="project-title">Blink (EV Charging)</h3>
+              <div class="project-meta">
+                AWS · Terraform · EKS · Helm · Bitbucket
+              </div>
+              <div class="project-desc">
+                <ul>
+                  <li>Provisioned AWS infrastructure (EKS, VPC, EC2, IAM, RDS, CloudFront, ECR,
+                    Route 53) using <strong>Terraform</strong>.</li>
+                  <li>Migrated Docker services to Kubernetes, created <strong>Helm</strong> charts
+                    and QA Docker Compose stacks.</li>
+                  <li>Built and maintained CI/CD pipelines on <strong>Bitbucket</strong> for dev,
+                    staging, and production.</li>
+                  <li>Configured <strong>Grafana</strong> and <strong>Prometheus</strong> for
+                    metrics monitoring, and used <strong>Promtail</strong> +
+                    <strong>Loki</strong> for logs.
+                  </li>
+                  <li>Managed access controls and provided infrastructure support to Dev/QA teams.
+                  </li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span>AWS</span>
+                <span>Terraform</span>
+                <span>EKS</span>
+                <span>Helm</span>
+                <span>Bitbucket</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kaholo CI/CD Automation Tool -->
+          <div class="project-card">
+            <div>
+              <h3 class="project-title">Kaholo CI/CD Automation Tool</h3>
+              <div class="project-meta">
+                Kaholo · Azure · Docker · Kubernetes · Terraform
+              </div>
+              <div class="project-desc">
+                <ul>
+                  <li>Designed CI/CD pipeline templates using Kaholo plugins for microservices,
+                    DBAs, infrastructure, and Azure services.</li>
+                  <li>Integrated tools: Docker, Kubernetes, Terraform, Prometheus, Grafana, Slack,
+                    Jira, Git.</li>
+                  <li>Leveraged Azure services including AKS, ACR, Web App Service, SQL DB, ARM
+                    templates, and Storage Account.</li>
+                  <li>Used AWS resources like EC2, VPC, ECS, ECR, EKS and CodeBuild/CodePipeline
+                    when required to support hybrid templates.</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span>Kaholo</span>
+                <span>Azure</span>
+                <span>Terraform</span>
+                <span>Kubernetes</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Soft-Skills  -->
+      <div class="about soft-skills">
+        <h2 class="title2">Soft Skills</h2>
+        <ul>
+          <li>Team Leadership & Collaboration</li>
+          <li>Technical Problem-Solving</li>
+          <li>Project Management & Planning</li>
+          <li>Communication & Documentation</li>
+          <li>Mentoring & Knowledge Sharing</li>
+          <li>Adaptability & Quick Learning</li>
+          <li>Attention to Detail</li>
+          <li>Stakeholder Management</li>
+        </ul>
+      </div>
+      <!-- Technical-Skills  -->
+    </div>
+  </div>
+</body>
+
 </html>
